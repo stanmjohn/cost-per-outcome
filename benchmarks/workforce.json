@@ -1,0 +1,110 @@
+{
+  "about": "Benchmarks for US workforce programs. Every number here is a default, never a fact. Each entry lists the published points behind it, with source, link, year, and place, and says what it does not cover. Any program file can override any entry by giving its own low, likely, and high.",
+  "benchmarks": [
+    {
+      "id": "comparison-group-employment",
+      "label": "Share of a comparison group employed with no program",
+      "unit": "share",
+      "low": 0.737,
+      "likely": 0.796,
+      "high": 0.811,
+      "how_set": "Low and high are the lowest and highest of the four points below. Likely is the midpoint of the middle two.",
+      "does_not_cover": "Placement at program exit, which no study below measures. Each study counted employment a different way, and each entry says how. Every study screened its applicants before the lottery, so these are motivated job seekers, not the general public. Self-employment and informal work are mostly missed.",
+      "points": [
+        {
+          "value": 0.811,
+          "what": "Comparison group members who were employed at the six-year survey. The report prints 18.9 percent not employed, and this is the remainder.",
+          "source": "Fein and Dastrup, Benefits that Last, OPRE Report 2022-77, Exhibit 2-3",
+          "url": "https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf",
+          "year": "Enrolled 2013 to 2014, surveyed about six years later",
+          "place": "Eight Year Up offices in nine US cities",
+          "measured": "Follow-up survey, 534 comparison group respondents"
+        },
+        {
+          "value": 0.802,
+          "what": "Comparison group members who worked at any time in 2018.",
+          "source": "Schaberg and Greenberg, Long-Term Effects of a Sectoral Advancement Strategy, MDRC 2020, Table ES.3",
+          "url": "https://www.mdrc.org/sites/default/files/WorkAdvance_5-Year_Report_ES_Final.pdf",
+          "year": "Enrolled 2011 to 2013, measured in 2018",
+          "place": "New York City, Tulsa, and northeast Ohio",
+          "measured": "National Directory of New Hires wage records"
+        },
+        {
+          "value": 0.79,
+          "what": "Comparison group members employed at any time in months 13 to 24.",
+          "source": "Maguire and others, Tuning In to Local Labor Markets, Public/Private Ventures 2010, Table 3",
+          "url": "https://www.explorevr.org/sites/explorevr.org/files/files/Tuning%20In%20to%20Local%20Labor%20Markets.pdf",
+          "year": "Surveyed 24 to 30 months after enrollment, report dated 2010",
+          "place": "Boston, the Bronx, and Milwaukee",
+          "measured": "Phone survey, self-reported, 79 percent response"
+        },
+        {
+          "value": 0.737,
+          "what": "Comparison group members employed at any time in the eleventh year.",
+          "source": "Roder and Elliott, Eleven Year Gains, Economic Mobility Corporation 2021, Figure 4",
+          "url": "https://economicmobilitycorp.org/wp-content/uploads/2021/09/Mobility_Eleven-Year-Gains.pdf",
+          "year": "Enrolled 2006 to 2008, measured eleven years later",
+          "place": "San Antonio, Texas",
+          "measured": "Texas Workforce Commission wage records, which miss work outside Texas"
+        }
+      ]
+    },
+    {
+      "id": "wioa-adult-training-cost",
+      "label": "Public training dollars per person trained, WIOA Adult program",
+      "unit": "dollars per participant",
+      "low": 1006,
+      "likely": 2400,
+      "high": 5158,
+      "how_set": "Likely is the national average. Low is the sixth-lowest state and high is the sixth-highest, so that one unusual state does not set the range. The full table runs from $208 in Florida to $8,878 in Kansas.",
+      "does_not_cover": "Administration, partner program funds, Pell grants, employer costs, and participant time. Federal WIOA Adult dollars only. Nominal dollars for program year 2023, not adjusted for inflation. It says nothing about results.",
+      "points": [
+        {
+          "value": 2400,
+          "what": "National average expenditure per training participant, printed as about $2,400.",
+          "source": "Congressional Research Service, R48542, May 2025",
+          "url": "https://www.everycrsreport.com/reports/R48542.html",
+          "year": "Program year 2023",
+          "place": "United States",
+          "measured": "Training dollars expended divided by participants who received training"
+        },
+        {
+          "value": 1006,
+          "what": "The sixth-lowest of 52 states and territories.",
+          "source": "Congressional Research Service, R48542, Table A-1",
+          "url": "https://www.everycrsreport.com/reports/R48542.html",
+          "year": "Program year 2023",
+          "place": "Colorado",
+          "measured": "Same as the national figure"
+        },
+        {
+          "value": 5158,
+          "what": "The sixth-highest of 52 states and territories.",
+          "source": "Congressional Research Service, R48542, Table A-1",
+          "url": "https://www.everycrsreport.com/reports/R48542.html",
+          "year": "Program year 2023",
+          "place": "Rhode Island",
+          "measured": "Same as the national figure"
+        },
+        {
+          "value": 3144,
+          "what": "One state, shown as a worked example of the spread.",
+          "source": "Congressional Research Service, R48542, Table A-1",
+          "url": "https://www.everycrsreport.com/reports/R48542.html",
+          "year": "Program year 2023",
+          "place": "Pennsylvania",
+          "measured": "Same as the national figure"
+        },
+        {
+          "value": 2469,
+          "what": "National cost per participant served, training services, one year later.",
+          "source": "US Department of Labor, WIOA National Performance Summary, Adult program, page 1",
+          "url": "https://www.dol.gov/sites/dolgov/files/ETA/Performance/pdfs/PY2024/Annual%20Web%20Contents/PY2024_Annual_Summary_Report.pdf",
+          "year": "Program year 2024",
+          "place": "United States",
+          "measured": "$270,423,198 expended across 109,506 participants"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+# Project QUEST, counted in added earnings.
+# Every figure is from the eleven-year report on a lottery study of 410 adults.
+# Roder and Elliott, Eleven Year Gains, Economic Mobility Corporation, 2021.
+
+program: Project QUEST, counted in earnings
+place: San Antonio, Texas
+years: Enrolled 2006 to 2008, followed for eleven years
+outcome: $1,000 of added earnings over eleven years
+outcome size: 1000
+dollars: 2019 dollars
+measured at: Years 1 to 11 after the lottery, including two training years when earnings fell
+counted by: Texas Workforce Commission wage records, which miss work outside Texas, for 207 program and 203 comparison group members
+
+[cost] Project QUEST costs per participant, not including tuition
+low: 8,702
+likely: 9,669
+high: 10,636
+source: Roder and Elliott 2021, Table 2
+url: https://economicmobilitycorp.org/wp-content/uploads/2021/09/Mobility_Eleven-Year-Gains.pdf
+range: set by the author of this file at 10 percent either side. The report prints one figure.
+note: Staff, career navigators, books, transport, exam fees, and administration.
+
+[cost] College costs for the program group
+low: 17,036
+likely: 17,036
+high: 17,836
+counted in budget: no
+source: Roder and Elliott 2021, Table 2 and the text under it
+url: https://economicmobilitycorp.org/wp-content/uploads/2021/09/Mobility_Eleven-Year-Gains.pdf
+range: the high adds the $800 the report says one uncounted course of study would add.
+note: QUEST paid part of this tuition itself. The report puts QUEST's own all-in cost at $12,464 per participant.
+
+[cost avoided] College costs for the comparison group
+low: 12,726
+likely: 12,726
+high: 13,999
+source: Roder and Elliott 2021, Table 2
+url: https://economicmobilitycorp.org/wp-content/uploads/2021/09/Mobility_Eleven-Year-Gains.pdf
+range: the high adds 10 percent, set by the author of this file. The report says some comparison group college went uncounted.
+
+[added by program] Earnings added per person over eleven years
+low: 3,246
+likely: 31,395
+high: 59,544
+source: Roder and Elliott 2021, Table A3
+url: https://economicmobilitycorp.org/wp-content/uploads/2021/09/Mobility_Eleven-Year-Gains.pdf
+range: the 90 percent confidence interval, worked out from the printed standard error of $17,112.
+note: A small study, so the range is wide. The printed p-value is 0.067.
+
+[with program] Earnings per person in the program group over eleven years
+low: 287,345
+likely: 287,345
+high: 287,345
+source: Roder and Elliott 2021, Table 2
+url: https://economicmobilitycorp.org/wp-content/uploads/2021/09/Mobility_Eleven-Year-Gains.pdf

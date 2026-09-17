@@ -1,0 +1,55 @@
+# Year Up, counted in added earnings.
+# Every figure is from the federal long-term evaluation, a lottery study.
+# Fein and Dastrup, Benefits that Last, OPRE Report 2022-77. Public domain.
+
+program: Year Up, counted in earnings
+place: Eight offices in nine US cities
+years: Enrolled 2013 to 2014, followed for seven years
+outcome: $1,000 of added earnings over seven years
+outcome size: 1000
+dollars: dollars as the report prints them. The report does not state a dollar year in the passages read, though it sets other programs' costs in 2014 dollars to compare them with its own
+measured at: Years 1 to 7 after the lottery, including the training year, when earnings fell
+counted by: National Directory of New Hires wage records for 1,637 program and 858 comparison group members
+
+[cost] Year Up cost per person assigned to the program
+low: 24,442
+likely: 27,158
+high: 29,874
+source: Fein and Dastrup 2022, Exhibit 5-2
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: set by the author of this file at 10 percent either side. The report prints one figure.
+note: $6,885 in stipends and $20,273 in staff, space, and other costs. Employers paid 59 percent, donors 39 percent, government 2 percent.
+
+[cost] Other education and training the program group used
+low: 5,736
+likely: 6,748
+high: 7,760
+counted in budget: no
+source: Fein and Dastrup 2022, Exhibit 5-2, panel 2
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: set by the author of this file at 15 percent either side. The report prints one figure.
+
+[cost avoided] Other education and training the comparison group used
+low: 9,155
+likely: 10,771
+high: 12,387
+source: Fein and Dastrup 2022, Exhibit 5-2, panel 2
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: set by the author of this file at 15 percent either side. The report prints one figure.
+note: The comparison group went to college more. Society paid for that either way, so it comes off the program's cost.
+
+[added by program] Earnings added per person over seven years
+low: 31,641
+likely: 38,152
+high: 44,663
+source: Fein and Dastrup 2022, Exhibit 2-1, Years 1-7
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: the 90 percent confidence interval, worked out from the printed standard error of $3,958.
+note: The report says the error grows by 1.5 to 2 times if the result is stretched to offices outside the study.
+
+[with program] Earnings per person in the program group over seven years
+low: 176,412
+likely: 176,412
+high: 176,412
+source: Fein and Dastrup 2022, Exhibit 2-1, Years 1-7
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf

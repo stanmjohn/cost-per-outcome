@@ -1,0 +1,46 @@
+# A made-up local program. No such program exists and every program figure
+# below is invented. The two benchmarks it leans on are real and sourced in
+# benchmarks/workforce.json.
+
+program: Riverbend Tech Training (made up)
+place: A mid-sized US county
+years: One class year
+outcome: one added person employed a year after the program
+dollars: Current dollars
+measured at: Twelve months after the last class
+counted by: A phone survey that reached 60 percent of the people who finished
+made up: yes
+
+[cost] Staff, rent, and supplies per person enrolled
+low: 5,400
+likely: 6,000
+high: 6,600
+source: Program budget (made up)
+
+[cost] Classroom space donated by a church
+low: 300
+likely: 500
+high: 800
+counted in budget: no
+source: The program's own guess at market rent (made up)
+
+[cost] Training vouchers the workforce board paid for the same people
+benchmark: wioa-adult-training-cost
+counted in budget: no
+
+[with program] Share of everyone enrolled who was employed at twelve months
+low: 72%
+likely: 82%
+high: 90%
+source: Program follow-up survey (made up)
+note: The program reports 85 percent, counted among the finishers it reached. This line restates that across everyone who enrolled.
+
+[without program] Share who find work with no program
+benchmark: comparison-group-employment
+
+[count check] How far to trust a survey that reached 60 percent
+low: 88%
+likely: 95%
+high: 100%
+source: Judgment of the file's author (made up)
+note: People with jobs answer follow-up surveys more often than people without.

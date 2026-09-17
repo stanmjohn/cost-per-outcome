@@ -1,0 +1,52 @@
+# Year Up, counted in jobs. Same study, same costs, a different outcome.
+# Set this brief beside year-up-earnings.md. The question asked decides the answer.
+# Fein and Dastrup, Benefits that Last, OPRE Report 2022-77. Public domain.
+
+program: Year Up, counted in jobs
+place: Eight offices in nine US cities
+years: Enrolled 2013 to 2014, followed for seven years
+outcome: one added person employed seven years later
+dollars: dollars as the report prints them. The report does not state a dollar year in the passages read, though it sets other programs' costs in 2014 dollars to compare them with its own
+measured at: The 27th quarter after the lottery, about seven years out
+counted by: National Directory of New Hires wage records for 1,637 program and 858 comparison group members
+
+[cost] Year Up cost per person assigned to the program
+low: 24,442
+likely: 27,158
+high: 29,874
+source: Fein and Dastrup 2022, Exhibit 5-2
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: set by the author of this file at 10 percent either side. The report prints one figure.
+
+[cost] Other education and training the program group used
+low: 5,736
+likely: 6,748
+high: 7,760
+counted in budget: no
+source: Fein and Dastrup 2022, Exhibit 5-2, panel 2
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: set by the author of this file at 15 percent either side. The report prints one figure.
+
+[cost avoided] Other education and training the comparison group used
+low: 9,155
+likely: 10,771
+high: 12,387
+source: Fein and Dastrup 2022, Exhibit 5-2, panel 2
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: set by the author of this file at 15 percent either side. The report prints one figure.
+
+[added by program] Share of people employed because of the program, quarter 27
+low: -2.1%
+likely: 1.0%
+high: 4.1%
+source: Fein and Dastrup 2022, Supplemental Exhibit 2, Q27
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf
+range: the 90 percent confidence interval, worked out from the printed standard error of 1.9 points.
+note: 73.8 percent of the program group and 72.8 percent of the comparison group were employed. The report calls the effect on employment scant.
+
+[with program] Share of the program group employed in quarter 27
+low: 73.8%
+likely: 73.8%
+high: 73.8%
+source: Fein and Dastrup 2022, Supplemental Exhibit 2, Q27
+url: https://acf.gov/sites/default/files/documents/opre/year%20up%20long-term%20impact%20report_apr2022.pdf

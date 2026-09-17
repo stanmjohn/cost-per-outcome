@@ -1,0 +1,16 @@
+{
+  "name": "cost-per-outcome",
+  "version": "0.1.0",
+  "description": "Cost per outcome for a workforce program, with a range, a ranked list of what moves it, and a source beside every assumption.",
+  "type": "module",
+  "bin": {
+    "cost-per-outcome": "bin/cost-per-outcome.mjs"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

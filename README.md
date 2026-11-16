@@ -1,5 +1,7 @@
 # Cost-per-Outcome Workbench
 
+[![test](https://github.com/stanmjohn/cost-per-outcome/workflows/test/badge.svg)](https://github.com/stanmjohn/cost-per-outcome/blob/main/.github/workflows/test.yml)
+
 What does one result from a workforce program really cost, how sure is that number, and which single assumption moves it most?
 
 ## Who it is for

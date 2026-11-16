@@ -10,6 +10,7 @@ dollars: Current dollars
 measured at: Twelve months after the last class
 counted by: A phone survey that reached 60 percent of the people who finished
 made up: yes
+real data: A real file would use the program's own budget and follow-up survey, and a local comparison rate in place of the national benchmark.
 
 [cost] Staff, rent, and supplies per person enrolled
 low: 5,400

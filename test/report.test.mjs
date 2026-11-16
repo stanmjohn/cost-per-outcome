@@ -112,11 +112,12 @@ source: study
   assert.ok(md.includes("no assumption can be ranked in dollars"));
 });
 
-test("a made-up program is labeled at the top", () => {
+test("a made-up program carries the PLACEHOLDER banner and what real data replaces it", () => {
   const md = brief(`
 program: Example
 outcome: one added job
 made up: yes
+real data: A real file would use the program's own budget.
 [cost] Staff
 low: 1,000
 likely: 1,000
@@ -133,5 +134,5 @@ likely: 40%
 high: 50%
 source: study
 `);
-  assert.ok(md.includes("**This program is made up.**"));
+  assert.ok(md.includes("> **PLACEHOLDER. This program is made up.** A real file would use the program's own budget."));
 });

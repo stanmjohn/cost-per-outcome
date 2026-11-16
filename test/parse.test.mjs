@@ -60,6 +60,13 @@ test("an unknown block or key names itself and the allowed list", () => {
   assert.throws(() => parseProgram(good.replace("source: budget", "cite: budget")), /"cite" is not a field/);
 });
 
+test("a made-up program must say what real data would replace it", () => {
+  const madeUp = good.replace("outcome: one added job", "outcome: one added job\nmade up: yes");
+  assert.throws(() => parseProgram(madeUp), /needs a "real data:" line/);
+  const p = parseProgram(madeUp.replace("made up: yes", "made up: yes\nreal data: The program's own budget."));
+  assert.equal(p.header.madeUp, true);
+});
+
 test("low, likely, high must run in order", () => {
   assert.throws(() => parseProgram(good.replace("likely: 5,000", "likely: 7,000")), /must run in that order/);
 });

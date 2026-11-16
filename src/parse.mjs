@@ -22,7 +22,7 @@ export const BLOCK_KINDS = [
 
 const HEADER_KEYS = [
   "program", "place", "years", "outcome", "outcome size", "dollars",
-  "measured at", "counted by", "made up",
+  "measured at", "counted by", "made up", "real data",
 ];
 
 const BLOCK_KEYS = [
@@ -91,6 +91,9 @@ export function parseProgram(text) {
 function validate(header, blocks) {
   for (const key of ["program", "outcome"]) {
     if (!header[key]) throw new Error(`The file needs a "${key}:" line at the top.`);
+  }
+  if (/^yes$/i.test(header["made up"] ?? "") && !header["real data"]) {
+    throw new Error(`A made-up program needs a "real data:" line at the top that says what real data would replace it.`);
   }
   const count = (kind) => blocks.filter((b) => b.kind === kind).length;
   if (count("cost") === 0) throw new Error(`The file needs at least one [cost] block.`);

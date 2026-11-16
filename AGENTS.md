@@ -9,17 +9,17 @@ A command line tool. A plain text file describing a workforce program goes in, a
 ## Commands
 
 ```
-npm test                                                              # all tests
-node bin/cost-per-outcome.mjs examples/year-up-earnings.txt --stdout  # print a brief
-node bin/cost-per-outcome.mjs examples/year-up-earnings.txt           # rewrite examples/year-up-earnings.md
-node bin/cost-per-outcome.mjs benchmarks                              # print the benchmark page
+npm test                                                                     # all tests
+node bin/cost-per-outcome.mjs examples/made-up-training-earnings.txt --stdout  # print a brief
+node bin/cost-per-outcome.mjs examples/made-up-training-earnings.txt           # rewrite examples/made-up-training-earnings.md
+node bin/cost-per-outcome.mjs benchmarks                                     # print the benchmark page
 ```
 
 Run the tests before and after any change.
 
 ## Layout
 
-- `bin/cost-per-outcome.mjs` reads the arguments and writes the file. No logic lives here.
+- `bin/cost-per-outcome.mjs` reads the arguments and writes the file. No logic lives here beyond refusing a second program file.
 - `src/parse.mjs` reads the program file. Every error names the line it came from.
 - `src/benchmarks.mjs` fills in any block that names a benchmark and marks it so the brief can name it.
 - `src/model.mjs` does all the arithmetic.
@@ -27,6 +27,9 @@ Run the tests before and after any change.
 - `src/report.mjs` formats the brief. It computes nothing.
 - `benchmarks/workforce.json` is the data. `benchmarks/workforce.md` is the same data as a readable page.
 - `examples/` holds each program file as `.txt` with its committed brief as `.md`.
+- `test/readme.test.mjs` checks the README excerpts against the briefs they quote. `test/cli.test.mjs` checks the command itself.
+- `.github/workflows/test.yml` runs `npm test` on GitHub on Node 20, 22, and 24.
+- `CITATION.cff` says how to cite the tool. Keep its version equal to the one in `package.json`.
 
 Keep that split. Math added to `report.mjs` or formatting added to `model.mjs` is a wrong change.
 
@@ -37,14 +40,17 @@ Keep that split. Math added to `report.mjs` or formatting added to `model.mjs` i
 3. `test/examples.test.mjs` rebuilds every example and compares it to the committed file. A change to the math or the wording means rerunning each `examples/*.txt` and committing the new `.md` files in the same commit.
 4. A run where the program added nothing is kept as the most expensive run. Never drop it, and keep reporting its share.
 5. A program file with no comparison of any kind is refused. Do not soften that into a warning.
-6. The brief never prints a cost per outcome without a range, never compares two programs, never projects past the years the evidence covers, and never uses a benchmark without naming it.
+6. The brief never prints a cost per outcome without a range, never compares two programs, never projects past the years the evidence covers, and never uses a benchmark without naming it. The command reads one program file at a time and refuses a second one with a plain message.
 7. Every benchmark entry carries its source, year, place, how it was measured, and what it does not cover. `test/benchmarks.test.mjs` refuses an entry that is missing one. Any program file can override any benchmark value.
 8. `test/report.test.mjs` pins the sentences that must never disappear. When one of those tests fails, fix the brief, not the test.
+9. No real organization is the subject of a worked example. Every example program is made up, with invented numbers, `made up: yes`, and a `real data:` line that says what real data would replace it. The brief prints that under a PLACEHOLDER banner, and `test/examples.test.mjs` refuses an example that is not made up. Published studies and federal data are named only as sources of the benchmark ranges, in `benchmarks/` and in the README's Data sources section.
+10. The README's Example section pastes text from committed briefs between `<!-- excerpt path -->` and `<!-- /excerpt -->` comments. After a rebuild, paste the new lines in. `test/readme.test.mjs` fails until the excerpt matches.
+11. The README states no test count, so it never goes stale.
 
 ## Adding a benchmark or an example
 
-A benchmark needs a public source a reader can open. Add it to `workforce.json`. The `benchmarks` command prints the page, so send its output to `benchmarks/workforce.md`. An example needs a public study behind every measured number, with the source written in the block that uses it.
+A benchmark needs a public source a reader can open. Add it to `workforce.json`. The `benchmarks` command prints the page, so send its output to `benchmarks/workforce.md`. An example is a made-up program per rule 9. Mark every invented figure "made up" in its source line, and label any range the file's author set.
 
 ## Style
 
-Comments describe what the code does now, not how it got there. Brief wording is plain enough for a board member. Error messages name the line and say what the file needs.
+Comments describe what the code does now, not how it got there. Brief and README wording is plain enough for a board member, in short sentences with no semicolons, no em-dashes, and no colons in the middle of a sentence. Error messages name the line and say what the file needs.

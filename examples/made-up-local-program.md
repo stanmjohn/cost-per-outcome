@@ -1,6 +1,6 @@
 # Cost per outcome: Riverbend Tech Training (made up)
 
-> **This program is made up.** It exists to show how the tool reads a typical local program file. The benchmarks it leans on are real and sourced below.
+> **PLACEHOLDER. This program is made up.** A real file would use the program's own budget and follow-up survey, and a local comparison rate in place of the national benchmark.
 
 One outcome is one added person employed a year after the program · A mid-sized US county · One class year
 
@@ -51,7 +51,7 @@ What it does not cover. Administration, partner program funds, Pell grants, empl
 - $1,010. The sixth-lowest of 52 states and territories. Colorado. Program year 2023. [Congressional Research Service, R48542, Table A-1](https://www.everycrsreport.com/reports/R48542.html)
 - $5,160. The sixth-highest of 52 states and territories. Rhode Island. Program year 2023. [Congressional Research Service, R48542, Table A-1](https://www.everycrsreport.com/reports/R48542.html)
 - $3,140. One state, shown as a worked example of the spread. Pennsylvania. Program year 2023. [Congressional Research Service, R48542, Table A-1](https://www.everycrsreport.com/reports/R48542.html)
-- $2,470. National cost per participant served, training services, one year later. United States. Program year 2024. [US Department of Labor, WIOA National Performance Summary, Adult program, page 1](https://www.dol.gov/sites/dolgov/files/ETA/Performance/pdfs/PY2024/Annual%20Web%20Contents/PY2024_Annual_Summary_Report.pdf)
+- $2,470. National cost per participant served in training services, the next program year, from the federal summary. United States. Program year 2024. [US Department of Labor, WIOA National Performance Summary, Adult program, page 1](https://www.dol.gov/sites/dolgov/files/ETA/Performance/pdfs/PY2024/Annual%20Web%20Contents/PY2024_Annual_Summary_Report.pdf)
 
 **Share of a comparison group employed with no program**, used for "Share who find work with no program". Low and high are the lowest and highest of the four points below. Likely is the midpoint of the middle two.
 

@@ -51,7 +51,7 @@ export function report(program, result) {
 
   push(`# Cost per outcome: ${header.program}`, "");
   if (header.madeUp) {
-    push(`> **This program is made up.** It exists to show how the tool reads a typical local program file. The benchmarks it leans on are real and sourced below.`, "");
+    push(`> **PLACEHOLDER. This program is made up.** ${header["real data"]}`, "");
   }
   const facts = [
     `One outcome is ${outcome}`,

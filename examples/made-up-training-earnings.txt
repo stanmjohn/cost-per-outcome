@@ -1,0 +1,48 @@
+# A made-up training program, counted in added earnings. No such program exists
+# and every figure below is invented. Set this brief beside made-up-training-jobs.md.
+# Same program, same costs, a different result counted.
+
+program: Ferncastle Skills Year (made up), counted in earnings
+place: A made-up city
+years: One class, followed for five years
+outcome: $1,000 of added earnings over five years
+outcome size: 1000
+dollars: Current dollars
+measured at: Years 1 to 5 after the lottery, including the training year, when earnings fell
+counted by: State wage records for a program group and a comparison group picked by lottery (made up)
+made up: yes
+real data: A real file would use the program's own cost per person and an earnings result from a lottery study or another study with a comparison group.
+
+[cost] Program cost per person offered a seat
+low: 16,200
+likely: 18,000
+high: 19,800
+source: Program budget (made up)
+range: set by the author of this file at 10 percent either side.
+
+[cost] Other training the program group used
+low: 2,500
+likely: 3,000
+high: 3,500
+counted in budget: no
+source: Follow-up survey (made up)
+
+[cost avoided] Other training the comparison group used
+low: 3,400
+likely: 4,000
+high: 4,600
+source: Follow-up survey (made up)
+note: The comparison group took more outside training. That cost was paid either way, so it comes off the program's cost.
+
+[added by program] Earnings added per person over five years
+low: 14,000
+likely: 22,000
+high: 30,000
+source: Lottery study of the program (made up)
+range: the 90 percent confidence interval the study printed (made up).
+
+[with program] Earnings per person in the program group over five years
+low: 150,000
+likely: 150,000
+high: 150,000
+source: Lottery study of the program (made up)

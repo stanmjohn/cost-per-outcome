@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this tool, please cite it as below."
+title: "Cost-per-Outcome Workbench"
+authors:
+  - family-names: "John"
+    given-names: "Stan"
+version: "0.2.0"
+date-released: "2026-11-15"
+license: MIT
+repository-code: "https://github.com/stanmjohn/cost-per-outcome"

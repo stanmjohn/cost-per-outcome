@@ -30,6 +30,20 @@ function flag(name) {
   return i !== -1 && args[i + 1] ? args[i + 1] : null;
 }
 
+export const ONE_FILE = "This tool reads one program file at a time. It does not compare programs, because two programs rarely count the same outcome the same way.";
+
+const VALUE_FLAGS = ["--out", "--draws", "--seed"];
+
+/** The arguments that are not flags or flag values, which is to say the file paths. */
+function paths() {
+  const found = [];
+  for (let i = 0; i < args.length; i++) {
+    if (VALUE_FLAGS.includes(args[i])) i++;
+    else if (!args[i].startsWith("--")) found.push(args[i]);
+  }
+  return found;
+}
+
 /** Program file text in, brief markdown out. */
 export function build(text, options = {}) {
   const program = applyBenchmarks(parseProgram(text), loadBenchmarks());
@@ -39,6 +53,12 @@ export function build(text, options = {}) {
 function main() {
   if (args.length === 0 || args[0] === "--help" || args[0] === "-h") return usage(args.length ? 0 : 1);
   if (args[0] === "benchmarks") return console.log(benchmarksPage(loadBenchmarks()));
+
+  if (paths().length > 1) {
+    console.error(ONE_FILE);
+    process.exitCode = 1;
+    return;
+  }
 
   const path = args[0];
   let text;
